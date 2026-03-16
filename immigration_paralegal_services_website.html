@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Immigration Paralegal & Notary Services</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #0b2c4a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0b2c4a;
+      margin-bottom: 15px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #0b2c4a;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    .disclaimer {
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+    footer {
+      background: #0b2c4a;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+    .langbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
+    .langbtn{background:#ffffff;color:#0b2c4a;border:1px solid rgba(255,255,255,0.55);padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer;}
+    .langbtn.active{background:#ffffff;color:#0b2c4a;box-shadow:0 2px 10px rgba(0,0,0,0.12);}
+    .lang{display:none;}
+    .lang.active{display:block;}
+
+    .cta {
+      background: #e9eef3;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .cta p {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+<nav style="background:#ffffff;box-shadow:0 2px 6px rgba(0,0,0,0.08);padding:12px 20px;position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+  <strong style="color:#0b2c4a;">Flavio Pinto</strong>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+    <a href="#services">Services</a>
+    <a href="#notary">Notary</a>
+    <a href="#contact">Contact</a>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('pt')">PT</button>
+    <button onclick="setLang('es')">ES</button>
+  </div>
+</nav>
+
+<!-- Language Toggle -->
+<div class="langbar" style="padding:14px 12px;background:#f4f6f8;">
+  <button class="langbtn active" type="button" onclick="setLang('en')">EN</button>
+  <button class="langbtn" type="button" onclick="setLang('pt')">PT</button>
+  <button class="langbtn" type="button" onclick="setLang('es')">ES</button>
+</div>
+
+<div id="lang-en" class="lang active">
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(el=>el.style.display='none');
+  document.querySelectorAll('[data-lang="'+lang+'"]').forEach(el=>el.style.display='block');
+}
+</script>
+
+<header>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+    <img src="Flavio Paralegal.png" alt="Flavio Pinto - Immigration Paralegal" style="width:260px;max-width:90%;border-radius:18px;box-shadow:0 8px 22px rgba(0,0,0,0.28);" />
+    <h1 style="margin:0;">Flavio Pinto</h1>
+    <p style="margin:0;font-size:1.15rem;"><strong>Immigration Paralegal & Notary Public</strong></p>
+    <p style="margin:0;font-size:1.1rem;"><strong>Cell Phone:</strong> (407) 725-2217</p>
+  </div>
+</header>
+<div style="position:fixed;bottom:20px;right:20px;z-index:999;">
+  <a href="tel:14077252217" style="background:#0b2c4a;color:#fff;padding:16px 20px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 6px 18px rgba(0,0,0,0.3);">📞 Call Now</a>
+</div>
+
+<section id="services">
+  <h2>Immigration Services</h2>
+  <p><strong>Professional Paralegal Document Preparation &amp; Filing Support</strong></p>
+  <p>Navigating the U.S. immigration system can feel overwhelming — but you don’t have to do it alone. We provide reliable, detail-driven immigration document preparation services, helping individuals, families, workers, and organizations file their applications accurately, efficiently, and with confidence.</p>
+
+  <div class="disclaimer" style="background:#e9eef3;border:1px solid #d7e0ea;">
+    <strong>Important Notice:</strong><br /><br />
+    All services are limited to document preparation and administrative support. <strong>No legal advice</strong> is provided. Services are offered under attorney supervision or as permitted by law.
+  </div>
+
+  <div class="services" style="margin-top:22px;">
+
+    <div class="card">
+      <h3>👨‍👩‍👧 Family-Based Immigration Support</h3>
+      <p>Reuniting families is at the heart of immigration. We help you prepare and organize every form and document needed for family petitions and green cards.</p>
+      <p><strong>We assist with:</strong></p>
+      <ul>
+        <li>Family petitions for spouses, parents, and children</li>
+        <li>Adjustment of Status and consular processing</li>
+        <li>Affidavits of Support and financial documentation</li>
+        <li>Fiancé(e) visas and follow-to-join cases</li>
+        <li>Work and travel permits while cases are pending</li>
+      </ul>
+      <p><strong>✔ Accurate forms</strong><br />
+      <strong>✔ Organized supporting evidence</strong><br />
+      <strong>✔ Timely filing</strong> with USCIS or U.S. consulates</p>
+    </div>
+
+    <div class="card">
+      <h3>💼 Employment &amp; Work Visa Preparation</h3>
+      <p>Whether you are an employer, professional, or skilled worker, we help prepare employment-based immigration filings with precision and care.</p>
+      <p><strong>Including support for:</strong></p>
+      <ul>
+        <li>H-1B, H-2A, H-2B work visas</li>
+        <li>L-1 intracompany transfers</li>
+        <li>O and P visas for extraordinary ability, athletes, and entertainers</li>
+        <li>TN professional visas</li>
+        <li>E-1 and E-2 treaty trader and investor visas</li>
+      </ul>
+      <p>We ensure your application is complete, well-documented, and submission-ready.</p>
+    </div>
+
+    <div class="card">
+      <h3>✝️ Religious Worker Immigration Services</h3>
+      <p>We proudly support religious organizations and workers with immigration document preparation tailored to faith-based service.</p>
+      <p><strong>Religious immigration support includes:</strong></p>
+      <ul>
+        <li>R-1 religious worker visas</li>
+        <li>Special Immigrant Religious Worker petitions (EB-4)</li>
+        <li>Green card applications for qualifying religious workers</li>
+        <li>Church and organization documentation preparation</li>
+      </ul>
+      <p>Our approach respects both the legal requirements and the mission of your organization.</p>
+    </div>
+
+    <div class="card">
+      <h3>🟢 Employment-Based Green Card Support</h3>
+      <p>Permanent residency is a major milestone. We help prepare employment-based green card filings from start to finish.</p>
+      <p><strong>Services include:</strong></p>
+      <ul>
+        <li>PERM labor certification support</li>
+        <li>Immigrant worker petitions</li>
+        <li>Adjustment of Status or consular processing</li>
+        <li>Work and travel authorization applications</li>
+      </ul>
+      <p>From EB-1 to EB-5 categories, we help ensure nothing is missed.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 Humanitarian Immigration Assistance</h3>
+      <p>For those seeking safety and protection, we provide compassionate and confidential document preparation support.</p>
+      <p><strong>We assist with:</strong></p>
+      <ul>
+        <li>Asylum and withholding of removal applications</li>
+        <li>Work permits for asylum applicants</li>
+        <li>VAWA self-petitions</li>
+        <li>U visas and T visas</li>
+        <li>Temporary Protected Status (TPS)</li>
+        <li>Special Immigrant Juvenile Status (SIJS)</li>
+      </ul>
+      <p>Your story matters — we help present it clearly and professionally.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚖️ Immigration Court &amp; Removal Defense Support</h3>
+      <p><strong>(Document Preparation Only)</strong></p>
+      <p>Facing immigration court can be stressful. We assist with organized, court-ready filings to support your case.</p>
+      <p><strong>Preparation services include:</strong></p>
+      <ul>
+        <li>Immigration court forms and filings</li>
+        <li>Cancellation of removal packets</li>
+        <li>Bond motion documentation</li>
+        <li>Prosecutorial discretion requests</li>
+        <li>Exhibit organization and filing</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🇺🇸 U.S. Citizenship &amp; Naturalization Services</h3>
+      <p>Becoming a U.S. citizen is a powerful step forward. We help make the process smoother.</p>
+      <p><strong>Citizenship support includes:</strong></p>
+      <ul>
+        <li>Naturalization applications</li>
+        <li>Citizenship certificates</li>
+        <li>Replacement documents</li>
+        <li>Interview preparation packets</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🔄 Waivers, Motions &amp; Case Support</h3>
+      <p>When complications arise, proper documentation is critical.</p>
+      <p><strong>We assist with:</strong></p>
+      <ul>
+        <li>Waivers of inadmissibility</li>
+        <li>Motions to reopen or reconsider</li>
+        <li>Follow-to-join requests</li>
+        <li>Record corrections and replacements</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>📋 Additional Immigration Support Services</h3>
+      <ul>
+        <li>USCIS FOIA requests</li>
+        <li>RFE and NOID response preparation</li>
+        <li>Case tracking and USCIS account assistance</li>
+        <li>Document review for accuracy and completeness</li>
+        <li>Translation and certification coordination</li>
+        <li>Green card renewals and replacements</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🌟 Why Clients Choose Us</h3>
+      <ul>
+        <li><strong>Experienced</strong> immigration document preparation</li>
+        <li><strong>Clear communication</strong> and organized filings</li>
+        <li><strong>Affordable</strong>, professional support</li>
+        <li><strong>Attention to detail</strong> that saves time and reduces stress</li>
+      </ul>
+      <p><strong>📞 Ready to Get Started?</strong><br />
+      Take the first step toward your immigration goal with confidence. Contact us today to schedule your consultation and begin your case.</p>
+      <p style="margin:12px 0 0 0;"><a href="tel:14077252217" style="display:inline-block;background:#0b2c4a;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;">Call (407) 725-2217</a>
+      <a href="https://wa.me/14077252217" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;margin-left:10px;">WhatsApp</a></p>
+    </div>
+
+  </div>
+</section>
+
+<section id="notary">
+  <h2>Notary, Apostille & Translation Services</h2>
+  <div class="services">
+
+    <div class="card">
+      <h3>Notary Public Services</h3>
+      <ul>
+        <li>Affidavits and sworn statements</li>
+        <li>Certified copies (where permitted)</li>
+        <li>Notarization of translated documents</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Apostille Processing</h3>
+      <ul>
+        <li>Document review for apostille eligibility</li>
+        <li>State and federal apostille coordination</li>
+        <li>Domestic and international document handling</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Translation Services</h3>
+      <ul>
+        <li>Certified translations for USCIS</li>
+        <li>Personal and civil documents</li>
+        <li>Accuracy and compliance statements included</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Attorney Collaboration & Referral Network</h2>
+  <div class="card">
+    <ul>
+      <li>Work under the supervision of licensed immigration attorneys</li>
+      <li>Freelance or contract paralegal services for law firms</li>
+      <li>Attorney referral network for legal consultation and representation</li>
+      <li>Clear separation between legal advice and administrative services</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="disclaimer">
+    <strong>Important Legal Disclaimer:</strong><br /><br />
+    I am not an attorney licensed to practice law and may not give legal advice or accept fees for legal advice. Immigration laws and procedures are complex and subject to change. All services provided are limited strictly to clerical, administrative, translation, and notarial assistance. For legal advice, case analysis, or representation, clients are referred to a licensed immigration attorney.
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cta">
+    <h2>Schedule a Consultation</h2>
+    <p>If you need professional assistance preparing immigration forms, organizing documents, or notary and apostille services, contact us today.</p>
+    <p><strong>Email:</strong> info@yourcompany.com | <strong>Phone:</strong> (XXX) XXX-XXXX</p>
+  </div>
+</section>
+
+</div><!-- /#lang-en -->
+
+<div id="lang-pt" class="lang">
+  <header style="background:#0b2c4a;color:#fff;padding:40px 20px;text-align:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+      <img src="Flavio Paralegal.png" alt="Flavio Pinto - Paralegal de Imigração" style="width:260px;max-width:90%;border-radius:18px;box-shadow:0 8px 22px rgba(0,0,0,0.28);" />
+      <h1 style="margin:0;">Flavio Pinto</h1>
+      <p style="margin:0;font-size:1.15rem;"><strong>Paralegal de Imigração &amp; Notário Público</strong></p>
+      <p style="margin:0;font-size:1.1rem;"><strong>Celular:</strong> (407) 725-2217</p>
+    </div>
+  </header>
+
+  <section id="services-pt" style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <h2>Serviços de Imigração</h2>
+    <p><strong>Preparação Profissional de Documentos e Suporte Administrativo para Protocolos</strong></p>
+    <p>Navegar pelo sistema de imigração dos EUA pode parecer assustador — mas você não precisa fazer isso sozinho. Oferecemos serviços confiáveis e detalhistas de preparação de documentos, ajudando pessoas, famílias, trabalhadores e organizações a preparar e enviar seus pedidos com precisão, eficiência e confiança.</p>
+
+    <div class="disclaimer" style="background:#e9eef3;border:1px solid #d7e0ea;">
+      <strong>Aviso Importante:</strong><br /><br />
+      Todos os serviços são limitados à <strong>preparação de documentos</strong> e <strong>suporte administrativo</strong>. <strong>Não fornecemos aconselhamento jurídico</strong>. Os serviços são oferecidos sob supervisão de advogado ou conforme permitido por lei.
+    </div>
+
+    <div class="services" style="margin-top:22px;">
+      <div class="card">
+        <h3>👨‍👩‍👧 Imigração Familiar</h3>
+        <p>Reunir famílias está no coração da imigração. Ajudamos você a preparar e organizar formulários e documentos para petições familiares e green cards.</p>
+        <p><strong>Apoiamos em:</strong></p>
+        <ul>
+          <li>Petições para cônjuges, pais e filhos</li>
+          <li>Ajuste de Status e processamento consular</li>
+          <li>Affidavit of Support e documentação financeira</li>
+          <li>Visto de noivo(a) (K-1) e follow-to-join</li>
+          <li>Permissões de trabalho e viagem durante a análise</li>
+        </ul>
+        <p><strong>✔ Formulários corretos</strong><br />
+        <strong>✔ Evidências organizadas</strong><br />
+        <strong>✔ Envio no prazo</strong> para USCIS ou consulados</p>
+      </div>
+
+      <div class="card">
+        <h3>💼 Vistos de Trabalho &amp; Emprego</h3>
+        <p>Se você é empregador, profissional ou trabalhador qualificado, ajudamos a preparar protocolos de imigração baseada em emprego com precisão e cuidado.</p>
+        <p><strong>Inclui suporte para:</strong></p>
+        <ul>
+          <li>Vistos H-1B, H-2A, H-2B</li>
+          <li>Transferências L-1 (intracompanhia)</li>
+          <li>Vistos O e P (habilidade extraordinária, atletas e artistas)</li>
+          <li>Visto TN (profissionais)</li>
+          <li>E-1 e E-2 (comerciante/investidor por tratado)</li>
+        </ul>
+        <p>Garantimos um pacote completo, bem documentado e pronto para envio.</p>
+      </div>
+
+      <div class="card">
+        <h3>✝️ Serviços para Trabalhadores Religiosos</h3>
+        <p>Temos orgulho em apoiar organizações religiosas e trabalhadores com preparação de documentos voltada ao serviço de fé.</p>
+        <p><strong>Inclui:</strong></p>
+        <ul>
+          <li>Visto R-1 (trabalhador religioso)</li>
+          <li>Petição EB-4 (Religious Worker)</li>
+          <li>Green card para trabalhadores religiosos elegíveis</li>
+          <li>Documentação de igreja e organização</li>
+        </ul>
+        <p>Nosso trabalho respeita as exigências legais e a missão da sua organização.</p>
+      </div>
+
+      <div class="card">
+        <h3>🟢 Green Card por Emprego</h3>
+        <p>A residência permanente é um marco importante. Ajudamos a preparar processos de green card por emprego do início ao fim.</p>
+        <p><strong>Inclui:</strong></p>
+        <ul>
+          <li>Suporte ao PERM (certificação laboral)</li>
+          <li>Petições de trabalhador imigrante</li>
+          <li>Ajuste de Status ou processamento consular</li>
+          <li>Autorizações de trabalho e viagem</li>
+        </ul>
+        <p>De EB-1 a EB-5, ajudamos a garantir que nada seja esquecido.</p>
+      </div>
+
+      <div class="card">
+        <h3>🤝 Assistência Humanitária</h3>
+        <p>Para quem busca proteção e segurança, oferecemos suporte compassivo e confidencial na preparação de documentos.</p>
+        <p><strong>Inclui:</strong></p>
+        <ul>
+          <li>Asilo e withholding of removal</li>
+          <li>Permissão de trabalho para solicitantes de asilo</li>
+          <li>VAWA (autopetição)</li>
+          <li>Vistos U e T</li>
+          <li>TPS</li>
+          <li>SIJS</li>
+        </ul>
+        <p>Sua história importa — ajudamos a apresentá-la com clareza e profissionalismo.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚖️ Tribunal de Imigração &amp; Remoção</h3>
+        <p><strong>(Somente Preparação de Documentos)</strong></p>
+        <p>Enfrentar a corte de imigração pode ser estressante. Ajudamos com protocolos organizados e prontos para o tribunal.</p>
+        <p><strong>Inclui:</strong></p>
+        <ul>
+          <li>Formulários e petições para a corte</li>
+          <li>Pacotes para cancellation of removal</li>
+          <li>Documentação para pedidos de fiança (bond)</li>
+          <li>Pedidos de prosecutorial discretion</li>
+          <li>Organização de anexos/exhibits</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🇺🇸 Cidadania &amp; Naturalização</h3>
+        <p>Tornar-se cidadão americano é um grande passo. Ajudamos a tornar o processo mais simples.</p>
+        <p><strong>Inclui:</strong></p>
+        <ul>
+          <li>Naturalização</li>
+          <li>Certificados de cidadania</li>
+          <li>Substituição de documentos</li>
+          <li>Pacotes para entrevista</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🔄 Waivers, Motions &amp; Suporte de Caso</h3>
+        <p>Quando surgem complicações, a documentação correta é essencial.</p>
+        <p><strong>Inclui:</strong></p>
+        <ul>
+          <li>Waivers de inadmissibilidade</li>
+          <li>Motions to reopen/reconsider</li>
+          <li>Follow-to-join</li>
+          <li>Correções e substituições de registros</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>📋 Suporte Adicional</h3>
+        <ul>
+          <li>Pedidos FOIA (USCIS)</li>
+          <li>Respostas a RFE e NOID</li>
+          <li>Rastreamento do caso e suporte com conta USCIS</li>
+          <li>Revisão de documentos (precisão e completeza)</li>
+          <li>Coordenação de traduções e certificações</li>
+          <li>Renovação/substituição de green card</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🌟 Por que os clientes nos escolhem</h3>
+        <ul>
+          <li><strong>Experiência</strong> em preparação de documentos de imigração</li>
+          <li><strong>Comunicação clara</strong> e protocolos organizados</li>
+          <li><strong>Suporte profissional</strong> e acessível</li>
+          <li><strong>Atenção aos detalhes</strong> que reduz estresse e retrabalho</li>
+        </ul>
+        <p><strong>📞 Pronto para começar?</strong><br />
+        Dê o primeiro passo com confiança. Entre em contato para agendar sua consulta e iniciar seu caso.</p>
+        <p style="margin:12px 0 0 0;">
+          <a href="tel:14077252217" style="display:inline-block;background:#0b2c4a;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;">Ligar (407) 725-2217</a>
+          <a href="https://wa.me/14077252217" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;margin-left:10px;">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="notary-pt" style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <h2>Notário, Apostila &amp; Traduções</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Serviços Notariais</h3>
+        <ul>
+          <li>Affidavits e declarações juramentadas</li>
+          <li>Notarização de documentos traduzidos</li>
+          <li>Reconhecimento/notarização (conforme permitido por lei)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Apostila</h3>
+        <ul>
+          <li>Revisão de elegibilidade para apostila</li>
+          <li>Coordenação de apostila estadual</li>
+          <li>Coordenação de apostila federal (quando aplicável)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Traduções</h3>
+        <ul>
+          <li>Traduções certificadas para USCIS</li>
+          <li>Documentos pessoais e civis</li>
+          <li>Declarações de precisão/certificação</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <h2>Colaboração com Advogados &amp; Rede de Encaminhamento</h2>
+    <div class="card">
+      <ul>
+        <li>Atuação sob supervisão de advogado de imigração licenciado</li>
+        <li>Serviços de paralegal como freelancer/contrato para escritórios</li>
+        <li>Rede de encaminhamento para consultoria e representação</li>
+        <li>Separação clara entre suporte administrativo e aconselhamento jurídico</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <div class="disclaimer">
+      <strong>Isenção de responsabilidade:</strong><br /><br />
+      Eu não sou advogado licenciado e não posso fornecer aconselhamento jurídico nem cobrar por aconselhamento jurídico. Os serviços são estritamente limitados a suporte clerical/administrativo, traduções e serviços notariais. Para análise jurídica, estratégia ou representação, indicamos um advogado licenciado.
+    </div>
+  </section>
+
+  <section style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <div class="cta">
+      <h2>Agende um atendimento</h2>
+      <p>Para assistência com formulários, organização de documentos, notário, apostila e traduções, entre em contato.</p>
+      <p><strong>Telefone:</strong> (407) 725-2217</p>
+      <p>
+        <a href="tel:14077252217" style="display:inline-block;background:#0b2c4a;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;">Ligar agora</a>
+        <a href="https://wa.me/14077252217" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;margin-left:10px;">WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <footer style="background:#0b2c4a;color:#fff;text-align:center;padding:25px 15px;font-size:0.9rem;">
+    <p>© 2026 Flavio Pinto — Serviços de Imigração, Notário, Apostila &amp; Traduções</p>
+  </footer>
+</div>
+
+<div id="lang-es" class="lang">
+  <header style="background:#0b2c4a;color:#fff;padding:40px 20px;text-align:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+      <img src="Flavio Paralegal.png" alt="Flavio Pinto - Paralegal de Inmigración" style="width:260px;max-width:90%;border-radius:18px;box-shadow:0 8px 22px rgba(0,0,0,0.28);" />
+      <h1 style="margin:0;">Flavio Pinto</h1>
+      <p style="margin:0;font-size:1.15rem;"><strong>Paralegal de Inmigración &amp; Notario Público</strong></p>
+      <p style="margin:0;font-size:1.1rem;"><strong>Celular:</strong> (407) 725-2217</p>
+    </div>
+  </header>
+
+  <section id="services-es" style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <h2>Servicios de Inmigración</h2>
+    <p><strong>Preparación Profesional de Documentos y Apoyo Administrativo para Presentaciones</strong></p>
+    <p>Navegar el sistema migratorio de EE. UU. puede ser abrumador — pero no tiene que hacerlo solo. Brindamos servicios confiables y detallistas de preparación de documentos, ayudando a personas, familias, trabajadores y organizaciones a presentar sus solicitudes con precisión, eficiencia y confianza.</p>
+
+    <div class="disclaimer" style="background:#e9eef3;border:1px solid #d7e0ea;">
+      <strong>Aviso Importante:</strong><br /><br />
+      Todos los servicios se limitan a la <strong>preparación de documentos</strong> y <strong>apoyo administrativo</strong>. <strong>No se brinda asesoría legal</strong>. Los servicios se ofrecen bajo supervisión de un abogado o según lo permita la ley.
+    </div>
+
+    <div class="services" style="margin-top:22px;">
+      <div class="card">
+        <h3>👨‍👩‍👧 Inmigración Familiar</h3>
+        <p>La reunificación familiar es esencial. Le ayudamos a preparar y organizar formularios y documentos para peticiones familiares y residencias.</p>
+        <p><strong>Asistimos con:</strong></p>
+        <ul>
+          <li>Peticiones para cónyuges, padres e hijos</li>
+          <li>Ajuste de estatus y trámite consular</li>
+          <li>Affidavit of Support y documentación financiera</li>
+          <li>Visas de prometido(a) (K-1) y follow-to-join</li>
+          <li>Permisos de trabajo y viaje mientras el caso está pendiente</li>
+        </ul>
+        <p><strong>✔ Formularios correctos</strong><br />
+        <strong>✔ Evidencia organizada</strong><br />
+        <strong>✔ Presentación a tiempo</strong> ante USCIS o consulados</p>
+      </div>
+
+      <div class="card">
+        <h3>💼 Visas de Trabajo y Empleo</h3>
+        <p>Ya sea empleador, profesional o trabajador calificado, ayudamos a preparar trámites migratorios por empleo con precisión y cuidado.</p>
+        <p><strong>Incluye apoyo para:</strong></p>
+        <ul>
+          <li>Visas H-1B, H-2A, H-2B</li>
+          <li>Transferencias L-1 (intracompañía)</li>
+          <li>Visas O y P (habilidad extraordinaria, atletas y artistas)</li>
+          <li>Visa TN (profesionales)</li>
+          <li>E-1 y E-2 (comerciante/inversionista por tratado)</li>
+        </ul>
+        <p>Nos aseguramos de que su solicitud esté completa, bien documentada y lista para enviarse.</p>
+      </div>
+
+      <div class="card">
+        <h3>✝️ Servicios para Trabajadores Religiosos</h3>
+        <p>Apoyamos con orgullo a organizaciones religiosas y trabajadores con preparación de documentos adaptada al servicio de fe.</p>
+        <p><strong>Incluye:</strong></p>
+        <ul>
+          <li>Visa R-1 (trabajador religioso)</li>
+          <li>Petición EB-4 (Religious Worker)</li>
+          <li>Residencia para trabajadores religiosos que califiquen</li>
+          <li>Documentación para iglesias y organizaciones</li>
+        </ul>
+        <p>Respetamos los requisitos legales y la misión de su organización.</p>
+      </div>
+
+      <div class="card">
+        <h3>🟢 Residencia por Empleo</h3>
+        <p>La residencia permanente es un gran paso. Ayudamos a preparar trámites de residencia por empleo de principio a fin.</p>
+        <p><strong>Incluye:</strong></p>
+        <ul>
+          <li>Apoyo al PERM (certificación laboral)</li>
+          <li>Peticiones de trabajador inmigrante</li>
+          <li>Ajuste de estatus o trámite consular</li>
+          <li>Autorización de trabajo y viaje</li>
+        </ul>
+        <p>Desde EB-1 hasta EB-5, ayudamos a que no se escape ningún detalle.</p>
+      </div>
+
+      <div class="card">
+        <h3>🤝 Asistencia Humanitaria</h3>
+        <p>Para quienes buscan protección, ofrecemos apoyo compasivo y confidencial en la preparación de documentos.</p>
+        <p><strong>Asistimos con:</strong></p>
+        <ul>
+          <li>Asilo y withholding of removal</li>
+          <li>Permisos de trabajo para solicitantes de asilo</li>
+          <li>VAWA (autopetición)</li>
+          <li>Visas U y T</li>
+          <li>TPS</li>
+          <li>SIJS</li>
+        </ul>
+        <p>Su historia importa — le ayudamos a presentarla con claridad y profesionalismo.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚖️ Corte de Inmigración y Remoción</h3>
+        <p><strong>(Solo Preparación de Documentos)</strong></p>
+        <p>Enfrentar la corte puede ser estresante. Ayudamos con presentaciones organizadas y listas para la corte.</p>
+        <p><strong>Incluye:</strong></p>
+        <ul>
+          <li>Formularios y presentaciones para la corte</li>
+          <li>Paquetes para cancellation of removal</li>
+          <li>Documentación para mociones de fianza (bond)</li>
+          <li>Solicitudes de prosecutorial discretion</li>
+          <li>Organización de anexos/exhibits</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🇺🇸 Ciudadanía y Naturalización</h3>
+        <p>Hacerse ciudadano estadounidense es un paso poderoso. Ayudamos a que el proceso sea más sencillo.</p>
+        <p><strong>Incluye:</strong></p>
+        <ul>
+          <li>Naturalización</li>
+          <li>Certificados de ciudadanía</li>
+          <li>Reemplazo de documentos</li>
+          <li>Paquetes para entrevista</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🔄 Waivers, Motions y Apoyo del Caso</h3>
+        <p>Cuando surgen complicaciones, la documentación correcta es clave.</p>
+        <p><strong>Asistimos con:</strong></p>
+        <ul>
+          <li>Waivers de inadmisibilidad</li>
+          <li>Motions to reopen/reconsider</li>
+          <li>Follow-to-join</li>
+          <li>Correcciones y reemplazos de registros</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>📋 Apoyo Migratorio Adicional</h3>
+        <ul>
+          <li>Solicitudes FOIA (USCIS)</li>
+          <li>Preparación de respuestas a RFE y NOID</li>
+          <li>Seguimiento del caso y ayuda con cuenta USCIS</li>
+          <li>Revisión de documentos (precisión y completitud)</li>
+          <li>Coordinación de traducciones y certificaciones</li>
+          <li>Renovación y reemplazo de green card</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🌟 Por qué los clientes nos eligen</h3>
+        <ul>
+          <li><strong>Experiencia</strong> en preparación de documentos migratorios</li>
+          <li><strong>Comunicación clara</strong> y presentaciones organizadas</li>
+          <li><strong>Apoyo profesional</strong> y accesible</li>
+          <li><strong>Atención al detalle</strong> que reduce estrés y demoras</li>
+        </ul>
+        <p><strong>📞 ¿Listo para comenzar?</strong><br />
+        Dé el primer paso con confianza. Contáctenos para programar su consulta e iniciar su caso.</p>
+        <p style="margin:12px 0 0 0;">
+          <a href="tel:14077252217" style="display:inline-block;background:#0b2c4a;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;">Llamar (407) 725-2217</a>
+          <a href="https://wa.me/14077252217" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;margin-left:10px;">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="notary-es" style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <h2>Notaría, Apostilla y Traducciones</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Servicios Notariales</h3>
+        <ul>
+          <li>Affidavits y declaraciones juradas</li>
+          <li>Notarización de documentos traducidos</li>
+          <li>Notarizaciones generales (según lo permita la ley)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Apostilla</h3>
+        <ul>
+          <li>Revisión de elegibilidad para apostilla</li>
+          <li>Coordinación de apostilla estatal</li>
+          <li>Coordinación de apostilla federal (cuando aplique)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Traducciones</h3>
+        <ul>
+          <li>Traducciones certificadas para USCIS</li>
+          <li>Documentos personales y civiles</li>
+          <li>Declaración de precisión/certificación</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <h2>Colaboración con Abogados y Red de Referidos</h2>
+    <div class="card">
+      <ul>
+        <li>Trabajo bajo supervisión de un abogado de inmigración con licencia</li>
+        <li>Servicios de paralegal freelance/por contrato para firmas legales</li>
+        <li>Red de referidos para consulta y representación legal</li>
+        <li>Separación clara entre apoyo administrativo y asesoría legal</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <div class="disclaimer">
+      <strong>Descargo de responsabilidad:</strong><br /><br />
+      No soy abogado con licencia y no puedo brindar asesoría legal ni cobrar por asesoría legal. Los servicios se limitan estrictamente a apoyo administrativo/clerical, traducciones y servicios notariales. Para análisis legal, estrategia o representación, referimos a un abogado con licencia.
+    </div>
+  </section>
+
+  <section style="padding:40px 20px;max-width:1100px;margin:auto;">
+    <div class="cta">
+      <h2>Agende una consulta</h2>
+      <p>Para asistencia con formularios, organización de documentos, notaría, apostilla y traducciones, contáctenos.</p>
+      <p><strong>Teléfono:</strong> (407) 725-2217</p>
+      <p>
+        <a href="tel:14077252217" style="display:inline-block;background:#0b2c4a;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;">Llamar ahora</a>
+        <a href="https://wa.me/14077252217" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:bold;margin-left:10px;">WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <footer style="background:#0b2c4a;color:#fff;text-align:center;padding:25px 15px;font-size:0.9rem;">
+    <p>© 2026 Flavio Pinto — Servicios de Inmigración, Notaría, Apostilla y Traducciones</p>
+  </footer>
+</div>
+
+<footer>
+  <p>© 2026 Immigration Paralegal & Notary Services. All rights reserved.</p>
+</footer>
+
+
+
+<script>
+  function setLang(lang){
+    const blocks = {
+      en: document.getElementById('lang-en'),
+      pt: document.getElementById('lang-pt'),
+      es: document.getElementById('lang-es')
+    };
+    Object.values(blocks).forEach(b => b.classList.remove('active'));
+    blocks[lang].classList.add('active');
+
+    document.querySelectorAll('.langbtn').forEach(btn => btn.classList.remove('active'));
+    const map = {en:0, pt:1, es:2};
+    document.querySelectorAll('.langbtn')[map[lang]].classList.add('active');
+
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+</script>
+</body>
+</html>
